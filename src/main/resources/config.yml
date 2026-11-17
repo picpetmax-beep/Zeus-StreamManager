@@ -1,0 +1,25 @@
+# Chat Manager announce command. {player} and {link} are replaced on approval.
+# Example: announce {player} is live: {link}
+announce-command: "announce {player} is live: {link}"
+
+# Cooldown between /stream announce requests, in seconds.
+request-cooldown-seconds: 300
+
+messages:
+  prefix: "&8[&6ZEUS&8] &r"
+  registered: "&aYour stream link has been saved: &f{link}"
+  request-sent: "&aYour announcement request has been sent to the staff."
+  no-link: "&cFirst register a link with /stream <link>."
+  cooldown: "&cPlease wait {seconds} seconds before requesting another announcement."
+  staff-request: "&6Stream announcement request from &e{player}&6: &f{link}"
+  staff-hint: "&7Approve: &f/stream approve {player} &8| &7Reject: &f/stream deny {player}"
+  approved: "&aYour stream announcement was approved."
+  denied: "&cYour stream announcement request was rejected."
+  approved-staff: "&aAnnouncement sent for {player}."
+  denied-staff: "&eRequest from {player} rejected."
+  no-pending: "&cThere is no pending request for that player."
+  invalid-link: "&cInvalid link. Use a full http:// or https:// URL."
+  usage: "&eUsage: /stream <link> | /stream announce | /stream approve <player> | /stream deny <player>"
+  player-only: "&cThis command can only be used in-game."
+  no-permission: "&cYou do not have permission."
+  announce-failed: "&cCould not run the Chat Manager announce command. Check config.yml."

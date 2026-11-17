@@ -1,0 +1,15 @@
+name: ZEUSStreamManager
+version: 1.0.0
+main: com.zeus.streammanager.ZEUSStreamManager
+api-version: '1.21'
+author: ZEUS
+description: Stream link registration and staff-approved announcements.
+commands:
+  stream:
+    description: Register your stream and request an announcement.
+    usage: /stream <link|announce|approve|deny|info>
+    aliases: [live]
+permissions:
+  zeusstream.staff:
+    description: Receive and manage stream announcement requests.
+    default: op
